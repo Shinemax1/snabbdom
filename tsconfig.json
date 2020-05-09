@@ -4,9 +4,21 @@
         "strictFunctionTypes": false,
         "strictBindCallApply": false,
         "noImplicitThis": false,
-        "target": "ES5",
+        "target": "ES2015",
+        "outDir": "es",
         "jsx": "react",
         "jsxFactory": "jsx",
+        "plugins": [
+            {
+                "transform": "ts-transform-import-path-rewrite",
+                "import": "transform",
+                "alias": {
+                  "^(\\..*)(?<!\\.js)$": "$1.js"
+                },
+                "after": true,
+                "type": "config"
+            },
+        ]
     },
     "files": [
         "src/helpers/attachto.ts",
