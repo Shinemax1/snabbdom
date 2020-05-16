@@ -23,7 +23,7 @@
     "benchmark": "2.1.4",
     "browserify": "16.5.1",
     "chai": "4.2.0",
-    "chalk": "3.0.0",
+    "chalk": "4.0.0",
     "core-js": "3.6.5",
     "cross-env": "7.0.2",
     "editorconfig-checker": "3.0.4",
